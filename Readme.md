@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Max Bubnov](https://up.htmlacademy.ru/adaptive/20/user/582743).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://up.htmlacademy.ru/htmlcss/28/user/614881).
 
 ---
 
