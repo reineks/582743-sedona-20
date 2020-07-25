@@ -9,12 +9,12 @@
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="index.html" class="page-header__logo" aria-label="Переход на главную страницу">
       <img src="https://via.placeholder.com/150x150" width="138" height="70" alt="Логотип города Седона">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item">
+        <li class="site-list__item">
           <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
@@ -40,30 +40,89 @@
     <section class="main-form">
       <h2>Оставьте свой отзыв</h2>
       <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+      <form action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
+        <fieldset>
+          <legend>Представьтесь</legend>
+          <label for="firstName">
+            <span>Имя*:</span>
+          </label>
+          <input type="text" id="firstName" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
+          <label for="lastName">
+            <span>Фамилия*:</span>
+          </label>
+          <input type="text" id="lastName" placeholder="Иванов" name="secondName" aria-label="Указать фамилию" required>
+          <label for="middleName">
+            <span>Отчество:</span>
+          </label>
+          <input type="text" id="middleName" placeholder="Александрович" name="middleName"
+            aria-label="Указать отчество">
+        </fieldset>
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <label for="telephone">
+            <span>Контактный телефон*:</span>
+          </label>
+          <input type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber"
+            aria-label="Указать номер телефона" required>
+          <label for="mail">
+            <span>Электронная почта*:</span>
+          </label>
+          <input type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress"
+            aria-label="Указать адрес электронной почты" required>
+        </fieldset>
+        <fieldset>
+          <legend>Ваше общее впечатление:</legend>
+          <label for="viewPointPositive">Скорее положительное</label>
+          <input type="radio" id="viewPointPositive" name="answer" value="viewPointPositive"
+            aria-label="Указать положительное" checked>
+          <label for="viewPointNegative">Скорее отрицательное</label>
+          <input type="radio" id="viewPointNegative" name="answer" value="viewPointNegative"
+            aria-label="Указать отрицательное">
+          <label for="viewPointDifficult">Затрудняюсь ответить</label>
+          <input type="radio" id="viewPointDifficult" name="answer" value="viewPointDifficult"
+            aria-label="Затрудняюсь ответить">
+        </fieldset>
+        <fieldset>
+          <legend>Посещенные достопримечательности:</legend>
+          <input type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
+          <label for="bridge">Мост Дьявола</label>
+          <input type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
+          <label for="mount">Гора-Колокол</label>
+          <input type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
+          <label for="park">Слайд-парк</label>
+          <input type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
+          <label for="rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset>
+          <legend>Опишите свои эмоции:</legend>
+          <textarea form="formfield" placeholder="Опишите подробно все свои восторги" cols="25"></textarea>
+        </fieldset>
+        <button type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
+      </form>
+      <footer class="page-footer">
+        <p class="page-footer-text">#Visitsedona</p>
+        <ul class="page-footer__list" aria-label="Социальные сети">
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в Twitter">
+              <img src="" width="17" height="15" alt="Twitter">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в Facebook">
+              <img src="" width="9" height="19" alt="Facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в YouTube">
+              <img src="" width="20" height="14" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy">
+        </a>
+      </footer>
     </section>
-    <footer class="page-footer">
-      <p class="page-footer-text">#Visitsedona</p>
-      <ul class="page-footer__list" aria-label="Социальные сети">
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в Twitter">
-            <img src="" width="17" height="15" alt="Twitter">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в Facebook">
-            <img src="" width="9" height="19" alt="Facebook">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в YouTube">
-            <img src="" width="20" height="14" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright-text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy">
-      </a>
-    </footer>
   </main>
 </body>
 
