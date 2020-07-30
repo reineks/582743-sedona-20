@@ -1,8 +1,5 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/common.scss";
-@import "blocks/header.scss";
-@import "blocks/main.scss";
-@import "blocks/footer.scss";
-@import "blocks/header/headerStyle.scss";
-@import "blocks/footer/footerStyle.scss";
+@import "blocks/header/index.scss";
+@import "blocks/footer/index.scss";
