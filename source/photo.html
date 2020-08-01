@@ -9,98 +9,106 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo" aria-label="Переход на главную страницу">
-      <img src="https://via.placeholder.com/150x150" width="138" height="70" alt="Логотип города Седона">
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--active"><a>Фото и Видео</a>
-        </li>
-        <li class="site-list__item"><a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-      <button class="page-header__button" type="button"></button>
-    </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Фото и видео города Седона</h1>
-    <section class="main-promo">
-      <h2 class="visually-hidden">Приветствие от города</h2>
-      <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="456" height="350"
-        alt="Приветствие города">
-    </section>
-    <section class="main-media">
-      <h2 class="main-media__header">Фото и видео</h2>
-      <span class="main-media__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть
-        о политике и экономике.</span>
-      <ul class="main-media__list">
-        <li class="main-media__item">
-          <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150" width="280"
-              height="280" alt="Фото дороги"></a>
-          <span class="main-media__text">Неродные просторы</span>
-          <span class="main-media__text">Автор фото: Борис</span>
-          <button type="button" class="main-media__button"></button>
-          <span class="main-media__likes-number"></span>
-        </li>
-        <li class="main-media__item">
-          <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150" width="280"
-              height="280" alt="Фото растения"></a>
-          <span class="main-media__text">Местная растительность</span>
-          <span class="main-media__text">Автор фото: Сергей</span>
-          <button type="button" class="main-media__button"></button>
-          <span class="main-media__likes-number"></span>
-        </li>
-        <li class="main-media__item">
-          <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150" width="280"
-              height="280" alt="Фото дороги"></a>
-          <span class="main-media__text">Дорога на север</span>
-          <span class="main-media__text">Автор фото: Петр</span>
-          <button type="button" class="main-media__button"></button>
-          <span class="main-media__likes-number"></span>
-        </li>
-        <li class="main-media__item">
-          <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150" width="280"
-              height="280" alt="Фото достопримечательности Мост Дьявола"></a>
-          <span class="main-media__text">Мост Дьявола</span>
-          <span class="main-media__text">Автор фото: Антон</span>
-          <button type="button" class="main-media__button"></button>
-          <span class="main-media__likes-number"></span>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <span>Все еще сомневаетесь?</span>
-      <span>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
-    </section>
-    <footer class="page-footer">
-      <p class="page-footer-text">#Visitsedona</p>
-      <ul class="page-footer__list" aria-label="Социальные сети">
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в Twitter">
-            <img src="" width="17" height="15" alt="Twitter">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в Facebook">
-            <img src="" width="9" height="19" alt="Facebook">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="#" aria-label="Перейти в аккаунт города в YouTube">
-            <img src="" width="20" height="14" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright-text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy">
+  <div class="container">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://htmlacademy.ru/intensive/adaptive" width="101" height="84" alt="Логотип города Седона">
       </a>
-    </footer>
-  </main>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item-active">
+            <a>Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="page-header__button" type="button"></button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Фото и видео города Седона</h1>
+      <section class="main-promo">
+        <h2 class="visually-hidden">Приветствие от города</h2>
+        <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="320" height="214"
+          alt="Приветствие города">
+      </section>
+      <section class="main-media">
+        <div class="main-features__wrapper">
+          <span class="main-features__title">Фото и видео</span2>
+          <span class="main-features__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</span>
+        </div>
+        <ul class="main-media__list list">
+          <li class="main-media__item">
+            <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150"
+                width="280" height="280" alt="Фото дороги"></a>
+            <span class="main-media__text">Неродные просторы</span>
+            <span class="main-media__text-author">Автор фото: Борис</span>
+            <button type="button" class="main-media__button"></button>
+            <span class="main-media__likes-number">1350</span>
+          </li>
+          <li class="main-media__item">
+            <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150"
+                width="280" height="280" alt="Фото растения"></a>
+            <span class="main-media__text">Местная растительность</span>
+            <span class="main-media__text-author">Автор фото: Сергей</span>
+            <button type="button" class="main-media__button"></button>
+            <span class="main-media__likes-number">143</span>
+          </li>
+          <li class="main-media__item">
+            <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150"
+                width="280" height="280" alt="Фото дороги"></a>
+            <span class="main-media__text">Дорога на север</span>
+            <span class="main-media__text-author">Автор фото: Петр</span>
+            <button type="button" class="main-media__button"></button>
+            <span class="main-media__likes-number">96</span>
+          </li>
+          <li class="main-media__item">
+            <a href="#" aria-label="Открыть полный размер фото"><img src="https://via.placeholder.com/150x150"
+                width="280" height="280" alt="Фото достопримечательности Мост Дьявола"></a>
+            <span class="main-media__text">Мост Дьявола</span>
+            <span class="main-media__text-author">Автор фото: Антон</span>
+            <button type="button" class="main-media__button"></button>
+            <span class="main-media__likes-number">254</span>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="main-features__wrapper">
+          <span class="main-features__title">Все еще сомневаетесь?</span>
+          <span class="main-features__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <p class="page-footer-text">#Visitsedona</p>
+        <ul class="page-footer__list list" aria-label="Социальные сети">
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в Twitter">
+              <img src="" width="17" height="15" alt="Twitter">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в Facebook">
+              <img src="" width="9" height="19" alt="Facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" aria-label="Перейти в аккаунт города в YouTube">
+              <img src="" width="20" height="14" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy"></a>
+      </footer>
+    </main>
+  </div>
 </body>
 
 </html>

@@ -9,122 +9,128 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo" aria-label="Переход на главную страницу">
-      <img src="https://via.placeholder.com/150x150" width="138" height="70" alt="Логотип города Седона">
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фото и Видео</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-        </li>
-      </ul>
-      <button class="page-header__button" type="button"></button>
-    </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Форма отзыва о городе</h1>
-    <section class="main-promo">
-      <h2 class="visually-hidden">Приветствие от города</h2>
-      <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="456" height="350"
-        alt="Приветствие города">
-    </section>
-    <section class="main-form">
-      <h2>Оставьте свой отзыв</h2>
-      <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
-        <fieldset>
-          <legend>Представьтесь</legend>
-          <label for="firstName">
-            <span>Имя*:</span>
-          </label>
-          <input type="text" id="firstName" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
-          <label for="lastName">
-            <span>Фамилия*:</span>
-          </label>
-          <input type="text" id="lastName" placeholder="Иванов" name="secondName" aria-label="Указать фамилию" required>
-          <label for="middleName">
-            <span>Отчество:</span>
-          </label>
-          <input type="text" id="middleName" placeholder="Александрович" name="middleName"
-            aria-label="Указать отчество">
-        </fieldset>
-        <fieldset>
-          <legend>Контактная информация</legend>
-          <label for="telephone">
-            <span>Контактный телефон*:</span>
-          </label>
-          <input type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber"
-            aria-label="Указать номер телефона" required>
-          <label for="mail">
-            <span>Электронная почта*:</span>
-          </label>
-          <input type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress"
-            aria-label="Указать адрес электронной почты" required>
-        </fieldset>
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <label for="viewPointPositive">Скорее положительное</label>
-          <input type="radio" id="viewPointPositive" name="answer" value="viewPointPositive"
-            aria-label="Указать положительное" checked>
-          <label for="viewPointNegative">Скорее отрицательное</label>
-          <input type="radio" id="viewPointNegative" name="answer" value="viewPointNegative"
-            aria-label="Указать отрицательное">
-          <label for="viewPointDifficult">Затрудняюсь ответить</label>
-          <input type="radio" id="viewPointDifficult" name="answer" value="viewPointDifficult"
-            aria-label="Затрудняюсь ответить">
-        </fieldset>
-        <fieldset>
-          <legend>Посещенные достопримечательности:</legend>
-          <input type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
-          <label for="bridge">Мост Дьявола</label>
-          <input type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
-          <label for="mount">Гора-Колокол</label>
-          <input type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
-          <label for="park">Слайд-парк</label>
-          <input type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
-          <label for="rocks">Красные скалы</label>
-        </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции:</legend>
-          <textarea form="formfield" placeholder="Опишите подробно все свои восторги" cols="25"></textarea>
-        </fieldset>
-        <button type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
-      </form>
-      <footer class="page-footer">
-        <p class="page-footer-text">#Visitsedona</p>
-        <ul class="page-footer__list" aria-label="Социальные сети">
-          <li class="page-footer__item">
-            <a href="#" aria-label="Перейти в аккаунт города в Twitter">
-              <img src="" width="17" height="15" alt="Twitter">
-            </a>
+  <div class="container">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://htmlacademy.ru/intensive/adaptive" width="101" height="84" alt="Логотип города Седона">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="page-footer__item">
-            <a href="#" aria-label="Перейти в аккаунт города в Facebook">
-              <img src="" width="9" height="19" alt="Facebook">
-            </a>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и Видео</a>
           </li>
-          <li class="page-footer__item">
-            <a href="#" aria-label="Перейти в аккаунт города в YouTube">
-              <img src="" width="20" height="14" alt="YouTube">
-            </a>
+          <li class="site-list__item site-list__item-active">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <p class="page-footer__copyright-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy">
-        </a>
-      </footer>
-    </section>
-  </main>
+        <button class="page-header__button" type="button"></button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма отзыва о городе</h1>
+      <section class="main-promo">
+        <h2 class="visually-hidden">Приветствие от города</h2>
+        <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="456" height="350"
+          alt="Приветствие города">
+      </section>
+      <section class="main-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="main-features__wrapper">
+          <span class="main-features__title">Оставьте свой отзыв</span>
+          <p class="main-features__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
+          <fieldset>
+            <legend>Представьтесь</legend>
+            <label for="firstName">
+              <span>Имя*:</span>
+            </label>
+            <input type="text" id="firstName" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
+            <label for="lastName">
+              <span>Фамилия*:</span>
+            </label>
+            <input type="text" id="lastName" placeholder="Иванов" name="secondName" aria-label="Указать фамилию"
+              required>
+            <label for="middleName">
+              <span>Отчество:</span>
+            </label>
+            <input type="text" id="middleName" placeholder="Александрович" name="middleName"
+              aria-label="Указать отчество">
+          </fieldset>
+          <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="telephone">
+              <span>Контактный телефон*:</span>
+            </label>
+            <input type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber"
+              aria-label="Указать номер телефона" required>
+            <label for="mail">
+              <span>Электронная почта*:</span>
+            </label>
+            <input type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress"
+              aria-label="Указать адрес электронной почты" required>
+          </fieldset>
+          <fieldset>
+            <legend>Ваше общее впечатление:</legend>
+            <label for="viewPointPositive">Скорее положительное</label>
+            <input type="radio" id="viewPointPositive" name="answer" value="viewPointPositive"
+              aria-label="Указать положительное" checked>
+            <label for="viewPointNegative">Скорее отрицательное</label>
+            <input type="radio" id="viewPointNegative" name="answer" value="viewPointNegative"
+              aria-label="Указать отрицательное">
+            <label for="viewPointDifficult">Затрудняюсь ответить</label>
+            <input type="radio" id="viewPointDifficult" name="answer" value="viewPointDifficult"
+              aria-label="Затрудняюсь ответить">
+          </fieldset>
+          <fieldset>
+            <legend>Посещенные достопримечательности:</legend>
+            <input type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
+            <label for="bridge">Мост Дьявола</label>
+            <input type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
+            <label for="mount">Гора-Колокол</label>
+            <input type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
+            <label for="park">Слайд-парк</label>
+            <input type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
+            <label for="rocks">Красные скалы</label>
+          </fieldset>
+          <fieldset>
+            <legend>Опишите свои эмоции:</legend>
+            <textarea form="formfield" placeholder="Опишите подробно все свои восторги" cols="25"></textarea>
+          </fieldset>
+          <button type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
+        </form>
+        <footer class="page-footer">
+          <p class="page-footer-text">#Visitsedona</p>
+          <ul class="page-footer__list list" aria-label="Социальные сети">
+            <li class="page-footer__item">
+              <a href="#" aria-label="Перейти в аккаунт города в Twitter">
+                <img src="" width="17" height="15" alt="Twitter">
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" aria-label="Перейти в аккаунт города в Facebook">
+                <img src="" width="9" height="19" alt="Facebook">
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" aria-label="Перейти в аккаунт города в YouTube">
+                <img src="" width="20" height="14" alt="YouTube">
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Переход на сайт разработчика HTML Academy"></a>
+        </footer>
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>

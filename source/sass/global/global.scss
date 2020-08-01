@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
