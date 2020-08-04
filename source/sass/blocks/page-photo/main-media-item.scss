@@ -1,4 +1,4 @@
-.main-media__item {
+.main-media-item {
   padding: 22px 20px 22px 20px;
 }
 
@@ -9,11 +9,15 @@
   font-weight: 700;
 }
 
-.main-media__text_size_small {
-  text-transform: lowercase;
+.main-media__text {
+  &--size-small {
+  text-transform: none;
   font-weight: 400;
+  }
 }
 
-.main-media__text_size_weight {
+.main-media__text {
+  &--size-weight {
   font-weight: 700;
+  }
 }

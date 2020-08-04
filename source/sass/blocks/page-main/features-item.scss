@@ -1,0 +1,25 @@
+.features-item {
+  padding: 55px 12px 39px 13px;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-item {
+  &--color {
+  padding: 26px 30px 24px 30px;
+  color: var(--black);
+  background-color: var(--grey);
+    }
+}
+
+.features__title {
+  &--margin {
+  margin-bottom: 20px;
+  font-weight: 700;
+  }
+}
