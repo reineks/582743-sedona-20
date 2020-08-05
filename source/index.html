@@ -5,27 +5,26 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://htmlacademy.ru/intensive/adaptive" width="101" height="84" alt="Логотип города Седона">
+      <a class="page-logo">
+        <img src="https://via.placeholder.com/150x150" width="101" height="84" alt="Логотип города Седона">
       </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item site-list__item-active">
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__item main-nav-list list">
+          <li class="main-nav-list__item main-nav-list__item--active">
             <a>Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav-list__item">
             <a href="photo.html">Фото и Видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav-list__item">
             <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav-list__item">
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
@@ -39,65 +38,66 @@
         <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="320" height="389"
           alt="Приветствие города">
       </section>
-      <section class="main-features">
+      <section class="features">
         <h2 class="visually-hidden">Преимущества города</h2>
-        <div class="main-features__wrapper">
-          <span class="main-features__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</span>
-          <span class="main-features__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
+        <div class="features__item title-wrapper">
+          <span class="title-wrapper__text">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</span>
+          <span class="title-wrapper__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
         </div>
-        <ol class="main-features__list list">
+        <ol class="features__list list">
           <li>
-            <div class="main-features__item list">
-              <span class="main-features__title">Настоящий городок</span>
-              <span class="main-features__number">– №1 –</span>
-              <span class="main-features__text">Седона - не аттракцион для туристов, там течёт своя жизнь</span>
+            <div class="features__item features-item list">
+              <span class="features-item__title">Настоящий городок</span>
+              <span class="features-item__text">– №1 –</span>
+              <span class="features-item__text">Седона - не аттракцион для туристов, там течёт своя жизнь</span>
             </div>
             <img src="https://via.placeholder.com/150x150" width="320" height="260" alt="Вид на город">
-            <ul class="main-features__item-list list">
-              <li class="main-features__item-list_text">
-                <span class="main-features__title_margin">Жильё</span>
-                <span class="main-features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+            <ul class="features__city-features city-features list">
+              <li class="city-features__item city-features-item">
+                <span class="city-features-item__title">Жильё</span>
+                <span class="city-features-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
               </li>
-              <li class="main-features__item-list_text">
-                <span class="main-features__title_margin">Еда</span>
-                <span class="main-features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+              <li class="city-features__item city-features-item">
+                <span class="city-features-item__title">Еда</span>
+                <span class="city-features-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
               </li>
-              <li class="main-features__item-list_text">
-                <span class="main-features__title_margin">Сувениры</span>
-                <span class="main-features__text">Не только китайского, но и местного производства!</span>
+              <li class="city-features__item city-features-item">
+                <span class="city-features-item__title">Сувениры</span>
+                <span class="city-features-item__text">Не только китайского, но и местного производства!</span>
               </li>
             </ul>
           </li>
           <li>
+            <div class="features__item features-item list">
+              <span class="features-item__title">Там есть Мост дьявола</span>
+              <span class="features-item__text">– №2 –</span>
+              <span class="features-item__text">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+            </div>
             <img src="https://via.placeholder.com/150x150" width="320" height="260"
               alt="Вид на достопримечательность Мост Дьявола">
-            <div class="main-features__item_grey list">
-              <span class="main-features__title">Там есть Мост дьявола</span>
-              <span class="main-features__number">– №2 –</span>
-              <span class="main-features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
-            </div>
           </li>
-          <li class="main-features__item_grey list">
-            <span class="main-features__title">Небольшая площадь</span>
-            <span class="main-features__number">– № 3 –</span>
-            <span class="main-features__text">Все достопримечательности находятся очень близко</span>
+          <li class="features__item features-item--color list">
+            <span class="features-item__title">Небольшая площадь</span>
+            <span class="features-item__text">– № 3 –</span>
+            <span class="features-item__text">Все достопримечательности находятся очень близко</span>
           </li>
-          <li class="main-features__item_grey list">
-            <span class="main-features__title">Красивая дорога</span>
-            <span class="main-features__number">– № 4 –</span>
-            <span class="main-features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+          <li class="features__item features-item--color list">
+            <span class="features-item__title">Красивая дорога</span>
+            <span class="features-item__text">– № 4 –</span>
+            <span class="features-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
           </li>
-          <li class="main-features__item_grey list">
-            <span class="main-features__title">Мало туристов</span>
-            <span class="main-features__number">– № 5 –</span>
-            <span class="main-features__text">Большинство едет в Гранд Каньон и толпится там</span>
+          <li class="features__item features-item--color list">
+            <span class="features-item__title">Мало туристов</span>
+            <span class="features-item__text">– № 5 –</span>
+            <span class="features-item__text">Большинство едет в Гранд Каньон и толпится там</span>
           </li>
         </ol>
       </section>
-      <section class="main-features__wrapper">
+      <section class="features__item title-wrapper">
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
-        <span class="main-features__title">Заинтересовались?</span>
-        <span class="main-features__description">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</span>
+        <span class="title-wrapper__text">Заинтересовались?</span>
+        <span class="title-wrapper__description">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения
+          гостиниц в Седоне</span>
         <button type="submit" aria-label="Переход на страницу поиска гостиниц">Показать гостиницы</button>
       </section>
     </main>
@@ -106,17 +106,17 @@
       <ul class="page-footer__list list" aria-label="Социальные сети">
         <li class="page-footer__item">
           <a href="#" aria-label="Перейти в аккаунт города в Twitter">
-            <img src="" width="17" height="15" alt="Twitter">
+            <img src="https://via.placeholder.com/150x150" width="17" height="15" alt="Twitter">
           </a>
         </li>
         <li class="page-footer__item">
           <a href="#" aria-label="Перейти в аккаунт города в Facebook">
-            <img src="" width="9" height="19" alt="Facebook">
+            <img src="https://via.placeholder.com/150x150" width="9" height="19" alt="Facebook">
           </a>
         </li>
         <li class="page-footer__item">
           <a href="#" aria-label="Перейти в аккаунт города в YouTube">
-            <img src="" width="20" height="14" alt="YouTube">
+            <img src="https://via.placeholder.com/150x150" width="20" height="14" alt="YouTube">
           </a>
         </li>
       </ul>
