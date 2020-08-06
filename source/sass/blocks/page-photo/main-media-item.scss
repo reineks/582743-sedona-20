@@ -1,0 +1,19 @@
+.main-media-item {
+  padding: 22px 20px 22px 20px;
+}
+
+.main-media__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: start;
+  font-weight: 700;
+
+  &--size-small {
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  &--size-weight {
+    font-weight: 700;
+  }
+}
