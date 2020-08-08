@@ -15,7 +15,7 @@
   width: 194px;
   height: 58px;
   padding: 18px 22px 14px 22px;
-  font-family: "PT Sans", "Verdana", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   background-color: var(--light-grey);
@@ -28,8 +28,7 @@
 
   &--size-big {
     width: 280px;
-    height: 58px;
-    padding: 18px 70px 14px 22px;
+    padding-right: 70px;
   }
 
   &--size-area {
