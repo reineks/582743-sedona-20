@@ -1,0 +1,39 @@
+.form-name__title {
+  font-weight: 700;
+}
+
+.form-name__label {
+  font-size: 14px;
+
+  &--size-bold {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.form-name__field {
+  width: 194px;
+  height: 58px;
+  padding: 18px 22px 14px 22px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--light-grey);
+  border: 0 solid transparent;
+
+  &--size-medium {
+    width: 230px;
+    height: 58px;
+  }
+
+  &--size-big {
+    width: 280px;
+    padding-right: 70px;
+  }
+
+  &--size-area {
+    max-width: 279px;
+    height: 160px;
+    padding: 13px 23px 29px 21px;
+  }
+}

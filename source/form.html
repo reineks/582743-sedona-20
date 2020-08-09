@@ -33,80 +33,62 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Форма отзыва о городе</h1>
-      <section class="main-promo">
+      <section class="page-main__promo main-promo">
         <h2 class="visually-hidden">Приветствие от города</h2>
         <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="456" height="350"
           alt="Приветствие города">
       </section>
       <section class="page-main__form main-form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="title-wrapper">
+        <div class="main-form__title title-wrapper">
           <span class="title-wrapper__text">Оставьте свой отзыв</span>
           <p class="title-wrapper__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
             посещенных вами достопримечательностях</p>
         </div>
-        <form action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
-          <fieldset>
-            <legend>Представьтесь</legend>
-            <label for="first-name">
-              <span>Имя*:</span>
-            </label>
-            <input type="text" id="first-name" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
-            <label for="last-name">
-              <span>Фамилия*:</span>
-            </label>
-            <input type="text" id="last-name" placeholder="Иванов" name="secondName" aria-label="Указать фамилию"
-              required>
-            <label for="middle-name">
-              <span>Отчество:</span>
-            </label>
-            <input type="text" id="middle-name" placeholder="Александрович" name="middleName"
-              aria-label="Указать отчество">
+        <form class="main-form__inputs form-fields" action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
+          <fieldset class="form-fields__name form-name">
+            <legend class="form-name__title">Представьтесь</legend>
+            <label class="form-name__label" for="first-name">Имя*:</label>
+            <input class="form-name__field form-name__field--size-medium" type="text" id="first-name" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
+            <label class="form-name__label" for="last-name">Фамилия*:</label>
+            <input class="form-name__field" type="text" id="last-name" placeholder="Иванов" name="secondName" aria-label="Указать фамилию" required>
+            <label class="form-name__label" for="middle-name">Отчество:</label>
+            <input class="form-name__field" type="text" id="middle-name" placeholder="Александрович" name="middleName" aria-label="Указать отчество">
           </fieldset>
-          <fieldset>
-            <legend>Контактная информация</legend>
-            <label for="telephone">
-              <span>Контактный телефон*:</span>
-            </label>
-            <input type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber"
-              aria-label="Указать номер телефона" required>
-            <label for="mail">
-              <span>Электронная почта*:</span>
-            </label>
-            <input type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress"
-              aria-label="Указать адрес электронной почты" required>
+          <fieldset class="form-fields__contacts form-name">
+            <legend class="form-name__title">Контактная информация</legend>
+            <label class="form-name__label" for="telephone">Контактный телефон*:</label>
+            <input class="form-name__field form-name__field--size-big" type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber" aria-label="Указать номер телефона" required>
+            <label class="form-name__label" for="mail">Электронная почта*:</label>
+            <input class="form-name__field form-name__field--size-big" type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress" aria-label="Указать адрес электронной почты" required>
           </fieldset>
-          <fieldset>
-            <legend>Ваше общее впечатление:</legend>
-            <label for="view-point-positive">Скорее положительное</label>
-            <input type="radio" id="view-point-positive" name="answer" value="viewPointPositive"
-              aria-label="Указать положительное" checked>
-            <label for="view-point-negative">Скорее отрицательное</label>
-            <input type="radio" id="view-point-negative" name="answer" value="viewPointNegative"
-              aria-label="Указать отрицательное">
-            <label for="view-point-difficult">Затрудняюсь ответить</label>
-            <input type="radio" id="view-point-difficult" name="answer" value="viewPointDifficult"
-              aria-label="Затрудняюсь ответить">
+          <fieldset class="form-fields__viewpoints form-name">
+            <legend class="form-name__title">Ваше общее впечатление:</legend>
+            <input class="form-name__field-radio" type="radio" id="viewpoint-positive" name="answer" value="viewpointPositive" aria-label="Указать положительное" checked>
+            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-positive">Скорее положительное</label>
+            <input class="form-name__field-radio" type="radio" id="viewpoint-negative" name="answer" value="viewpointNegative" aria-label="Указать отрицательное">
+            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-negative">Скорее отрицательное</label>
+            <input class="form-name__field-radio" type="radio" id="viewpoint-difficult" name="answer" value="viewpointDifficult" aria-label="Затрудняюсь ответить">
+            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-difficult">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset>
-            <legend>Посещенные достопримечательности:</legend>
-            <input type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
-            <label for="bridge">Мост Дьявола</label>
-            <input type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
-            <label for="mount">Гора-Колокол</label>
-            <input type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
-            <label for="park">Слайд-парк</label>
-            <input type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
-            <label for="rocks">Красные скалы</label>
+          <fieldset class="form-fields__places form-name">
+            <legend class="form-name__title">Посещенные достопримечательности:</legend>
+            <input class="form-name__field-checkbox" type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
+            <label class="form-name__label form-name__label--weight text-transform" for="bridge">Мост Дьявола</label>
+            <input class="form-name__field-checkbox" type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
+            <label class="form-name__label form-name__label--weight text-transform" for="mount">Гора-Колокол</label>
+            <input class="form-name__field-checkbox" type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
+            <label class="form-name__label form-name__label--weight text-transform" for="park">Слайд-парк</label>
+            <input class="form-name__field-checkbox" type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
+            <label class="form-name__label form-name__label--weight text-transform" for="rocks">Красные скалы</label>
           </fieldset>
-          <fieldset>
-            <legend>Опишите свои эмоции:</legend>
-            <textarea form="formfield" placeholder="Опишите подробно все свои восторги" cols="25"
-              aria-label="Описать свои впечатления от поездки"></textarea>
+          <fieldset class="form-fields__emotions form-name">
+            <legend class="form-name__title">Опишите свои эмоции:</legend>
+            <textarea class="form-name__field form-name__field--size-area" form="formfield" placeholder="Опишите подробно все свои восторги" cols="25" aria-label="Описать свои впечатления от поездки"></textarea>
           </fieldset>
-          <button type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
+          <button class="form-fields__button button" type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
         </form>
-        <footer class="page-footer">
+        <footer class="main-form__footer page-footer">
           <p class="page-footer-text">#Visitsedona</p>
           <ul class="page-footer__list list" aria-label="Социальные сети">
             <li class="page-footer__item">
