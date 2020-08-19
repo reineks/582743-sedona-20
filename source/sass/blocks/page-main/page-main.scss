@@ -1,0 +1,53 @@
+.page-main__features {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.page-main__list,
+.page-main__list-container,
+.page-main__city-features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-main__city-features {
+  padding-bottom: 36px;
+  background-color: $white;
+}
+
+.page-main__map {
+  height: 350px;
+}
+
+.page-main__map-photo {
+  height: 350px;
+}
+
+.page-main__photo-city {
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
+}
+
+.page-main__photo {
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    width: 512px;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 256px;
+    width: 800px;
+    order: -1;
+  }
+}

@@ -1,6 +1,13 @@
-.page-logo {
+.logo {
+  position: absolute;
   left: calc((100% - 101px) / 2);
+  z-index: 1;
   width: 101px;
   height: 84px;
-  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    left: calc((100% - 186px) / 2);
+    width: 186px;
+    height: 96px;
+  }
 }

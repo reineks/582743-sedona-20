@@ -1,0 +1,17 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
