@@ -1,10 +1,24 @@
-.page-main__features {
+.page-main__promo {
+  width: 320px;
+  height: 389px;
+
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
+    height: 518px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: $desktop-width;
+  }
+}
+
+.page-main__features {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -29,24 +43,25 @@
 }
 
 .page-main__photo-city {
-  height: 260px;
+  height: $block-medium;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    width: 512px;
+    height: $block-small;
   }
 }
 
 .page-main__photo {
-  height: 260px;
+  height: $block-medium;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    height: $block-small;
     width: 512px;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    height: 256px;
+    height: $block-small;
     width: 800px;
     order: -1;
   }

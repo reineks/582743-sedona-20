@@ -5,12 +5,12 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    width: 256px;
+    width: $block-small;
     padding: 36px 45px 6px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: $block-large;
     padding-bottom: 10px;
   }
 
@@ -39,7 +39,7 @@
     text-align: center;
   }
 
-  &--magrin {
+  &--margin {
     margin-bottom: 13px;
   }
 

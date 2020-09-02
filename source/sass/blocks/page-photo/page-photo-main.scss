@@ -3,12 +3,12 @@
   height: 158px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     height: 290px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: $desktop-width;
     height: 301px;
   }
 }
@@ -19,8 +19,8 @@
   margin-bottom: 102px;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
+    width: $tablet-block-large;
     height: 500px;
-    margin-bottom: 33px;
+    margin-bottom: 78px;
   }
 }

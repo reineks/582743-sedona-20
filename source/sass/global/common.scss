@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+    box-shadow: $border-black;
   }
 }
 
@@ -43,4 +43,10 @@
   border: 0;
   border-radius: 0;
   padding: 0;
+}
+
+.fieldset-border {
+  margin: 0;
+  padding: 0 0 5px 0;
+  border: 0;
 }

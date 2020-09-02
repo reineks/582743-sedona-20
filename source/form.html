@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,7 @@
 <body class="page">
   <div class="container">
     <header class="page-header">
-      <a href="index.html" class="page-logo">
+      <a href="index.html" class="page-header__logo logo">
         <img src="https://via.placeholder.com/150x150" width="101" height="84" alt="Логотип города Седона">
       </a>
       <nav class="page-header__nav main-nav">
@@ -31,85 +32,116 @@
         <button class="page-header__button" type="button"></button>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-form-main">
       <h1 class="visually-hidden">Форма отзыва о городе</h1>
-      <section class="page-main__promo main-promo">
+      <section class="page-form-main__promo">
         <h2 class="visually-hidden">Приветствие от города</h2>
-        <img class="main-promo__image" src="https://via.placeholder.com/150x150" width="456" height="350"
+        <img class="page-form-main__promo-image" src="https://via.placeholder.com/150x150" width="320" height="158"
           alt="Приветствие города">
       </section>
-      <section class="page-main__form main-form">
+      <section class="page-form-main__form main-form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="main-form__title title-wrapper">
-          <span class="title-wrapper__text">Оставьте свой отзыв</span>
-          <p class="title-wrapper__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
+        <div class="main-form__wrapper title-wrapper title-wrapper--padding-large">
+          <span class="title-wrapper__text title-wrapper__text--padding-large">Оставьте свой отзыв</span>
+          <p class="title-wrapper__description title-wrapper__description--margin">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
             посещенных вами достопримечательностях</p>
         </div>
         <form class="main-form__inputs form-fields" action="https://echo.htmlacademy.ru/courses" method="post" id="formfield">
-          <fieldset class="form-fields__name form-name">
-            <legend class="form-name__title">Представьтесь</legend>
-            <label class="form-name__label" for="first-name">Имя*:</label>
-            <input class="form-name__field form-name__field--size-medium" type="text" id="first-name" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
-            <label class="form-name__label" for="last-name">Фамилия*:</label>
-            <input class="form-name__field" type="text" id="last-name" placeholder="Иванов" name="secondName" aria-label="Указать фамилию" required>
-            <label class="form-name__label" for="middle-name">Отчество:</label>
-            <input class="form-name__field" type="text" id="middle-name" placeholder="Александрович" name="middleName" aria-label="Указать отчество">
+          <fieldset class="form-fields__name form-name fieldset-border">
+            <legend class="form-name__title">Представьтесь:</legend>
+            <div class="form-name-wrapper">
+              <label class="form-name__label" for="first-name">Имя*:</label>
+              <input class="form-name__field form-name__field--size-medium" type="text" id="first-name" placeholder="Петр" name="firstName" aria-label="Указать имя" required>
+              </div>
+            <div class="form-name-wrapper">
+              <label class="form-name__label form-name__label--margin" for="last-name">Фамилия*:</label>
+              <input class="form-name__field form-name__field--size-short" type="text" id="last-name" placeholder="Иванов" name="secondName" aria-label="Указать фамилию" required>
+            </div>
+            <div class="form-name-wrapper">
+              <label class="form-name__label form-name__label--margin-large" for="middle-name">Отчество:</label>
+              <input class="form-name__field form-name__field--size-large" type="text" id="middle-name" placeholder="Александрович" name="middleName" aria-label="Указать отчество">
+            </div>
           </fieldset>
-          <fieldset class="form-fields__contacts form-name">
-            <legend class="form-name__title">Контактная информация</legend>
-            <label class="form-name__label" for="telephone">Контактный телефон*:</label>
-            <input class="form-name__field form-name__field--size-big" type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber" aria-label="Указать номер телефона" required>
-            <label class="form-name__label" for="mail">Электронная почта*:</label>
-            <input class="form-name__field form-name__field--size-big" type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress" aria-label="Указать адрес электронной почты" required>
+          <fieldset class="form-fields__contacts form-name fieldset-border">
+            <legend class="form-name__title form-name__title--margin">Контактная информация:</legend>
+            <div class="form-name__wrapper form-name__wrapper--margin-medium">
+              <div class="form-name__wrapper form-name__wrapper--margin-small">
+                <label class="form-name__label-telephone" for="telephone">телефон*:</label>
+                <input class="form-name__field form-name__field--size-big" type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber" aria-label="Указать номер телефона" required>
+              </div>
+              <div class="form-name__wrapper form-name__wrapper--margin-small">
+                <label class="form-name__label-mail" for="mail">Электронная почта*:</label>
+                <input class="form-name__field form-name__field--margin" type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress" aria-label="Указать адрес электронной почты" required>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="form-fields__viewpoints form-name">
+          <fieldset class="form-fields__viewpoints form-name fieldset-border">
             <legend class="form-name__title">Ваше общее впечатление:</legend>
-            <input class="form-name__field-radio" type="radio" id="viewpoint-positive" name="answer" value="viewpointPositive" aria-label="Указать положительное" checked>
-            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-positive">Скорее положительное</label>
-            <input class="form-name__field-radio" type="radio" id="viewpoint-negative" name="answer" value="viewpointNegative" aria-label="Указать отрицательное">
-            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-negative">Скорее отрицательное</label>
-            <input class="form-name__field-radio" type="radio" id="viewpoint-difficult" name="answer" value="viewpointDifficult" aria-label="Затрудняюсь ответить">
-            <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-difficult">Затрудняюсь ответить</label>
+            <div class="form-name__wrapper">
+              <input class="form-name__field-radio" type="radio" id="viewpoint-positive" name="answer" value="viewpointPositive" aria-label="Указать положительное" checked>
+              <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-positive">Скорее положительное</label>
+            </div>
+            <div class="form-name__wrapper">
+              <input class="form-name__field-radio" type="radio" id="viewpoint-negative" name="answer" value="viewpointNegative" aria-label="Указать отрицательное">
+              <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-negative">Скорее отрицательное</label>
+            </div>
+            <div class="form-name__wrapper form-name__wrapper--margin-large">
+              <input class="form-name__field-radio" type="radio" id="viewpoint-difficult" name="answer" value="viewpointDifficult" aria-label="Затрудняюсь ответить">
+              <label class="form-name__label form-name__label--weight text-transform" for="viewpoint-difficult">Затрудняюсь ответить</label>
+            </div>
+            </fieldset>
+          <fieldset class="form-fields__places form-name form-name--padding fieldset-border">
+            <legend class="form-name__title form-name__title--padding">Посещенные достопримечательности:</legend>
+            <div class="form-name__wrapper form-name__wrapper--order">
+              <div class="form-name__wrapper form-name__wrapper--margin">
+                <input class="form-name__field-checkbox" type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
+                <label class="form-name__label form-name__label--weight-margin text-transform" for="bridge">Мост Дьявола</label>
+              </div>
+              <div class="form-name__wrapper form-name__wrapper--margin">
+                <input class="form-name__field-checkbox" type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
+                <label class="form-name__label form-name__label--weight-margin text-transform" for="mount">Гора-Колокол</label>
+              </div>
+              <div class="form-name__wrapper form-name__wrapper--margin">
+                <input class="form-name__field-checkbox" type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
+                <label class="form-name__label form-name__label--weight-margin text-transform" for="park">Слайд-парк</label>
+              </div>
+              <div class="form-name__wrapper form-name__wrapper--margin">
+                <input class="form-name__field-checkbox" type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
+                <label class="form-name__label form-name__label--weight-margin text-transform" for="rocks">Красные скалы</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="form-fields__places form-name">
-            <legend class="form-name__title">Посещенные достопримечательности:</legend>
-            <input class="form-name__field-checkbox" type="checkbox" id="bridge" name="bridgeDevil" aria-label="Указать Мост Дьявола" checked>
-            <label class="form-name__label form-name__label--weight text-transform" for="bridge">Мост Дьявола</label>
-            <input class="form-name__field-checkbox" type="checkbox" id="mount" name="mountBell" aria-label="Указать Гора-Колокол" checked>
-            <label class="form-name__label form-name__label--weight text-transform" for="mount">Гора-Колокол</label>
-            <input class="form-name__field-checkbox" type="checkbox" id="park" name="slidePark" aria-label="Указать Слайд-парк" checked>
-            <label class="form-name__label form-name__label--weight text-transform" for="park">Слайд-парк</label>
-            <input class="form-name__field-checkbox" type="checkbox" id="rocks" name="redRocks" aria-label="Указать Красные скалы">
-            <label class="form-name__label form-name__label--weight text-transform" for="rocks">Красные скалы</label>
-          </fieldset>
-          <fieldset class="form-fields__emotions form-name">
-            <legend class="form-name__title">Опишите свои эмоции:</legend>
+          <fieldset class="form-fields__emotions form-name fieldset-border">
+            <legend class="form-name__title form-name__title--margin-small">Опишите свои эмоции:</legend>
             <textarea class="form-name__field form-name__field--size-area" form="formfield" placeholder="Опишите подробно все свои восторги" cols="25" aria-label="Описать свои впечатления от поездки"></textarea>
+            <a class="title-wrapper__button title-wrapper__button--size button" href="#" type="submit" aria-label="Отправить указанные данные">Отправить отзыв</a>
           </fieldset>
-          <button class="form-fields__button button" type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
         </form>
-        <footer class="main-form__footer page-footer">
-          <p class="page-footer-text">#Visitsedona</p>
+        <footer class="page-footer">
+          <span class="page-footer__text page-footer__text--margin">#Visitsedona</span>
           <ul class="page-footer__list list" aria-label="Социальные сети">
             <li class="page-footer__item">
-              <a href="#" aria-label="Перейти в аккаунт города в Twitter">
+              <a href="#" aria-label="Перейти в аккаунт города в Twitter" class="page-footer__link">
                 <img src="https://via.placeholder.com/150x150" width="17" height="15" alt="Twitter">
               </a>
             </li>
-            <li class="page-footer__item">
-              <a href="#" aria-label="Перейти в аккаунт города в Facebook">
+            <li class="page-footer__item page-footer__item--size">
+              <a href="#" aria-label="Перейти в аккаунт города в Facebook" class="page-footer__link page-footer__link--size">
                 <img src="https://via.placeholder.com/150x150" width="9" height="19" alt="Facebook">
               </a>
             </li>
             <li class="page-footer__item">
-              <a href="#" aria-label="Перейти в аккаунт города в YouTube">
+              <a href="#" aria-label="Перейти в аккаунт города в YouTube" class="page-footer__link">
                 <img src="https://via.placeholder.com/150x150" width="20" height="14" alt="YouTube">
               </a>
             </li>
           </ul>
-          <p class="page-footer__copyright-text">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Переход на сайт разработчика HTML Academy"></a>
+          <div class="page-footer__copyright page-footer__copyright--margin">
+            <p class="page-footer__copyright-text">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy">
+              <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="логотип HTML Academy">
+            </a>
+          </div>
         </footer>
       </section>
     </main>
