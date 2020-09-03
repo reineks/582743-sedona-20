@@ -1,0 +1,26 @@
+.page-photo-main__promo {
+  width: 320px;
+  height: 158px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    height: 301px;
+  }
+}
+
+.page-photo-main__video {
+  width: 320px;
+  height: 201px;
+  margin-bottom: 102px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-block-large;
+    height: 500px;
+    margin-bottom: 78px;
+  }
+}

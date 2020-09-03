@@ -1,3 +1,16 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   min-height: 56px;
+  background-color: $white;
+}
+
+.page-header__button {
+  width: 22px;
+  height: 22px;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,0 +1,18 @@
+.page-form-main {
+  background-color: $white;
+}
+
+.page-form-main__promo {
+  width: 320px;
+  height: 158px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    height: 301px;
+  }
+}
