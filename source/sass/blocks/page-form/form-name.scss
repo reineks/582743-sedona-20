@@ -164,9 +164,11 @@
   font-size: 18px;
   background-color: $light-grey;
   border: 0 solid transparent;
+  $mobile-field-with: 280px;
+  $desktop-field-with: 312px;
 
   @media (min-width: $desktop-width) {
-    width: 312px;
+    width: $desktop-field-with;
   }
 
   &--size-short {
@@ -177,7 +179,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 312px;
+      width: $desktop-field-with;
     }
   }
 
@@ -204,7 +206,7 @@
   }
 
   &--size-big {
-    width: 280px;
+    width: $mobile-field-with;
     margin-top: 9px;
     margin-bottom: 13px;
     padding-right: 70px;
@@ -219,7 +221,7 @@
   }
 
   &--margin {
-    width: 280px;
+    width: $mobile-field-with;
     margin-top: 6px;
     margin-bottom: 23px;
 

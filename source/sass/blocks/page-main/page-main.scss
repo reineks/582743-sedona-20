@@ -1,5 +1,5 @@
 .page-main__promo {
-  width: 320px;
+  width: $mobile-block-width;
   height: 389px;
 
   @media (min-width: $tablet-width) {
@@ -34,10 +34,7 @@
   background-color: $white;
 }
 
-.page-main__map {
-  height: 350px;
-}
-
+.page-main__map,
 .page-main__map-photo {
   height: 350px;
 }
@@ -46,7 +43,7 @@
   height: $block-medium;
 
   @media (min-width: $tablet-width) {
-    width: 512px;
+    width: $tablet-photo-width;
     height: $block-small;
   }
 }
@@ -56,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     height: $block-small;
-    width: 512px;
+    width: $tablet-photo-width;
     order: -1;
   }
 

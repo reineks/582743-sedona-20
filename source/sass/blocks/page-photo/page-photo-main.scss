@@ -1,5 +1,5 @@
 .page-photo-main__promo {
-  width: 320px;
+  width: $mobile-block-width;
   height: 158px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
 }
 
 .page-photo-main__video {
-  width: 320px;
+  width: $mobile-block-width;
   height: 201px;
   margin-bottom: 102px;
 
