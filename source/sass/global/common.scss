@@ -15,15 +15,15 @@
 }
 
 .container {
-  width: 320px;
+  width: $mobile-block-width;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: $desktop-width;
     box-shadow: $border-black;
   }
 }
