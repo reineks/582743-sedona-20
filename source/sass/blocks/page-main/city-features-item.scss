@@ -1,50 +1,83 @@
 .city-features-item {
   display: flex;
   flex-direction: column;
-  padding: 36px 25px 1px 69px;
+  padding: 35px 25px 1px 69px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: $block-small;
-    padding: 36px 45px 6px 45px;
+    padding: 36px 43px 6px 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: $block-large;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-bottom: 10px;
   }
 
   &--padding-large {
-    padding-top: 27px;
+    padding-top: 25px;
+    padding-left: 70px;
 
     @media (min-width: $tablet-width) {
+      padding-right: 29px;
+      padding-left: 31px;
       order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 36px;
+      padding-right: 50px;
+      padding-left: 50px;
     }
   }
 
   &--padding {
     padding-top: 25px;
+    padding-left: 70px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 35px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
   }
 }
 
 .city-features-item__title {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-weight: 700;
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-top: 125px;
-    margin-bottom: 20px;
+    margin-top: 133px;
+    margin-bottom: 23px;
     font-size: 21px;
     text-align: center;
   }
 
-  &--margin {
-    margin-bottom: 13px;
+  @media (min-width: $desktop-width) {
+    margin-top: 122px;
+    margin-bottom: 23px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+  &--margin {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 122px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 123px;
+    }
   }
 }
 

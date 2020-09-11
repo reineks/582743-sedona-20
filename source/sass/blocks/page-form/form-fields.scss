@@ -1,12 +1,14 @@
 .form-fields {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,13 +21,14 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 21px;
-    padding-left: 56px;
+    margin-top: 23px;
+    padding-left: 57px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 20px;
     padding-bottom: 51px;
-    padding-left: 79px;
+    padding-left: 81px;
     margin-left: 0;
   }
 }
@@ -36,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-block-large;
-    margin-top: 45px;
+    margin-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,28 +53,32 @@
   order: -1;
 
   @media (min-width: $tablet-width) {
-    padding-right: 54px;
+    padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 137px;
+    padding-right: 131px;
     margin-right: 0;
   }
 }
 
 .form-fields__places {
-  margin-top: 16px;
+  margin-top: 15px;
   margin-right: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 .form-fields__emotions {
-  margin-top: 22px;
+  margin-top: 20px;
   margin-right: 0;
-  margin-bottom: 11px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-block-large;

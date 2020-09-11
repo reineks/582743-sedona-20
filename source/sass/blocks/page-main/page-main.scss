@@ -30,8 +30,16 @@
 }
 
 .page-main__city-features {
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
 }
 
 .page-main__map,

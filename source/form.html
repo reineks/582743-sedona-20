@@ -67,11 +67,17 @@
             <div class="form-name__wrapper form-name__wrapper--margin-medium">
               <div class="form-name__wrapper form-name__wrapper--margin-small">
                 <label class="form-name__label-telephone" for="telephone">телефон*:</label>
-                <input class="form-name__field form-name__field--size-big" type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber" aria-label="Указать номер телефона" required>
+                <div class="form-name__input-wrapper">
+                  <input class="form-name__field form-name__field--size-big" type="tel" inputmode="tel" id="telephone" placeholder="Введите телефон" name="telephoneNumber" aria-label="Указать номер телефона" required>
+                  <img src="https://via.placeholder.com/150x150" width="58" height="58" class="form-name__logo-telephone" alt="Телефон">
+                </div>
               </div>
               <div class="form-name__wrapper form-name__wrapper--margin-small">
                 <label class="form-name__label-mail" for="mail">Электронная почта*:</label>
-                <input class="form-name__field form-name__field--margin" type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress" aria-label="Указать адрес электронной почты" required>
+                <div class="form-name__input-wrapper">
+                  <input class="form-name__field form-name__field--margin" type="email" inputmode="email" id="mail" placeholder="Введите e-mail" name="emailAddress" aria-label="Указать адрес электронной почты" required>
+                  <img src="https://via.placeholder.com/150x150" width="58" height="58" class="form-name__logo-mail" alt="Адрес электронной почты">
+                </div>
               </div>
             </div>
           </fieldset>
@@ -114,10 +120,10 @@
           <fieldset class="form-fields__emotions form-name fieldset-border">
             <legend class="form-name__title form-name__title--margin-small">Опишите свои эмоции:</legend>
             <textarea class="form-name__field form-name__field--size-area" form="formfield" placeholder="Опишите подробно все свои восторги" cols="25" aria-label="Описать свои впечатления от поездки"></textarea>
-            <a class="title-wrapper__button title-wrapper__button--size button" href="#" type="submit" aria-label="Отправить указанные данные">Отправить отзыв</a>
+            <button class="form-name__link title-wrapper-button title-wrapper-button--size button" type="submit" aria-label="Отправить указанные данные">Отправить отзыв</button>
           </fieldset>
         </form>
-        <footer class="page-footer">
+        <footer class="page-footer page-footer--padding">
           <span class="page-footer__text page-footer__text--margin">#Visitsedona</span>
           <ul class="page-footer__list list" aria-label="Социальные сети">
             <li class="page-footer__item">

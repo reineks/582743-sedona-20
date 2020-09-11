@@ -16,11 +16,15 @@
 .page-photo-main__video {
   width: $mobile-block-width;
   height: 201px;
-  margin-bottom: 102px;
+  margin-bottom: 98px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-block-large;
     height: 500px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 78px;
   }
 }
